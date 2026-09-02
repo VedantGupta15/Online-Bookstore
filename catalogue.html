@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Catalogue</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main class="content">
+      <div class="card">
+        <h2>Book Catalogue</h2>
+
+        <p>
+          Select a book and click
+          <b>Add to Cart</b>.
+        </p>
+
+        <table>
+          <tr>
+            <th>Category</th>
+            <th>Cover</th>
+            <th>Book</th>
+            <th>Author</th>
+            <th>Publisher</th>
+            <th>Price</th>
+            <th>Action</th>
+          </tr>
+
+          <tr id="cse">
+            <td>CSE</td>
+
+            <td>
+              <img src="BookCovers/cse1.jpg" class="book-cover" alt="book" />
+            </td>
+            <td>Data Structures Using C</td>
+            <td>Reema Thareja</td>
+            <td>Oxford University Press</td>
+            <td>$40.5</td>
+            <td>
+              <button
+                class="btn"
+                onclick="
+                  addToCart(
+                    'Data Structures Using C',
+                    'Reema Thareja',
+                    'Oxford University Press',
+                    40.5,
+                  )
+                "
+              >
+                Add to Cart
+              </button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>CSE</td>
+
+            <td>
+              <img src="BookCovers/cse2.jpg " class="book-cover" alt="book" />
+            </td>
+            <td>Computer Networks</td>
+            <td>David J. Wetherall</td>
+            <td>Pearson</td>
+            <td>$35.5</td>
+            <td>
+              <button
+                class="btn"
+                onclick="
+                  addToCart(
+                    'Computer Networks',
+                    'David J. Wetherall',
+                    'Pearson',
+                    35.5,
+                  )
+                "
+              >
+                Add to Cart
+              </button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>CSE</td>
+
+            <td>
+              <img src="BookCovers/cse3.jpg" class="book-cover" alt="book" />
+            </td>
+            <td>Operating System Concepts</td>
+            <td>Greg Gagne</td>
+            <td>Pearson</td>
+            <td>$35.5</td>
+            <td>
+              <button
+                class="btn"
+                onclick="
+                  addToCart(
+                    'COperating System Concepts',
+                    'Greg Gagne',
+                    'Wiley',
+                    38.5,
+                  )
+                "
+              >
+                Add to Cart
+              </button>
+            </td>
+          </tr>
+
+          <tr id="ece">
+            <td>ECE</td>
+
+            <td>
+              <img src="BookCovers/ece1.jpg" class="book-cover" alt="book" />
+            </td>
+            <td>Electronic Devices and Circuit Theory</td>
+            <td>Louis Nashelsky</td>
+            <td>Pearson</td>
+            <td>$63</td>
+            <td>
+              <button
+                class="btn"
+                onclick="
+                  addToCart(
+                    'Electronic Devices and Circuit Theory',
+                    'Louis Nashelsky',
+                    'Pearson',
+                    63,
+                  )
+                "
+              >
+                Add to Cart
+              </button>
+            </td>
+          </tr>
+
+          <tr id="ece">
+            <td>ECE</td>
+
+            <td>
+              <img src="BookCovers/ece2.jpg" class="book-cover" alt="book" />
+            </td>
+            <td>Signals and Systems</td>
+            <td>S. Hamid Nawab</td>
+            <td>Pearson</td>
+            <td>$45</td>
+            <td>
+              <button
+                class="btn"
+                onclick="
+                  addToCart(
+                    'Signals and Systems',
+                    'S. Hamid Nawab',
+                    'Pearson',
+                    45,
+                  )
+                "
+              >
+                Add to Cart
+              </button>
+            </td>
+          </tr>
+
+          <tr id="eee">
+            <td>EEE</td>
+
+            <td>
+              <img src="BookCovers/eee.jpg" class="book-cover" alt="book" />
+            </td>
+            <td>Electrical Machines</td>
+            <td>D. P. Kothari</td>
+            <td>McGraw Hill</td>
+            <td>$40</td>
+            <td>
+              <button
+                class="btn"
+                onclick="
+                  addToCart(
+                    'Electrical Machines',
+                    'D. P. Kotharir',
+                    'McGraw Hill',
+                    40,
+                  )
+                "
+              >
+                Add to Cart
+              </button>
+            </td>
+          </tr>
+
+          <tr id="civil">
+            <td>CIVIL</td>
+            <td>
+              <img src="BookCovers/civil.jpg" class="book-cover" alt="book" />
+            </td>
+            <td>Strength of Materials</td>
+            <td>S S Rattan</td>
+            <td>Tech Publications</td>
+            <td>$50</td>
+            <td>
+              <button
+                class="btn"
+                onclick="
+                  addToCart(
+                    'Strength of Materials',
+                    'S S Rattan',
+                    'Laxmi Publicationss',
+                    50,
+                  )
+                "
+              >
+                Add to Cart
+              </button>
+            </td>
+          </tr>
+        </table>
+
+        <br />
+
+        <a class="btn" href="cart.html" target="rightFrame"> View Cart </a>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
