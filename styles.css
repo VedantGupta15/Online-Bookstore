@@ -125,6 +125,18 @@ a:hover {
   color: #b8860b;
 }
 
+.footer {
+  background: #245c3a;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
 .btn {
   display: inline-block;
   border: 0;
