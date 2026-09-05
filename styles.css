@@ -102,6 +102,15 @@ a:hover {
   background: #e9c46a;
 }
 
+.footer {
+  position: fixed;
+  bottom: 40px;
+  left: 5px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
 .content {
   padding: 28px;
 }
