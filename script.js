@@ -200,3 +200,49 @@ function clearCart() {
 
 // Display cart when cart page opens
 displayCart();
+
+// Registration form validation
+function validateRegistration() {
+  const name = document.getElementById("name").value.trim();
+  const password = document.getElementById("regPassword").value;
+  const email = document.getElementById("email").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+
+  // Name validation
+  const namePattern = /^[A-Za-z]+$/;
+
+  if (name.length < 6) {
+    alert("Name should contain at least 6 characters.");
+    return false;
+  }
+
+  if (!namePattern.test(name)) {
+    alert("Name should contain alphabets only.");
+    return false;
+  }
+
+  // Password validation
+  if (password.length < 6) {
+    alert("Password should contain at least 6 characters.");
+    return false;
+  }
+
+  // E-mail validation
+  const emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+
+  if (!emailPattern.test(email)) {
+    alert("Please enter a valid E-mail ID.");
+    return false;
+  }
+
+  // Phone number validation
+  const phonePattern = /^[0-9]{10}$/;
+
+  if (!phonePattern.test(phone)) {
+    alert("Phone number should contain exactly 10 digits.");
+    return false;
+  }
+
+  alert("Registration successful!");
+  return true;
+}
