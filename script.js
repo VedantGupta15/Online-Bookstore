@@ -246,3 +246,42 @@ function validateRegistration() {
   alert("Registration successful!");
   return true;
 }
+
+function validateRegistration() {
+  const name = document.getElementById("name").value.trim();
+  const password = document.getElementById("regPassword").value;
+  const email = document.getElementById("email").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+
+  const namePattern = /^[A-Za-z]+$/;
+  const emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+  const phonePattern = /^[0-9]{10}$/;
+
+  if (name.length < 6) {
+    alert("Name should contain at least 6 characters.");
+    return false;
+  }
+
+  if (!namePattern.test(name)) {
+    alert("Name should contain alphabets only.");
+    return false;
+  }
+
+  if (password.length < 6) {
+    alert("Password should contain at least 6 characters.");
+    return false;
+  }
+
+  if (!emailPattern.test(email)) {
+    alert("Please enter a valid E-mail ID.");
+    return false;
+  }
+
+  if (!phonePattern.test(phone)) {
+    alert("Phone number should contain exactly 10 digits.");
+    return false;
+  }
+
+  alert("Registration successful!");
+  return true;
+}
